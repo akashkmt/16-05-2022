@@ -11,7 +11,7 @@ async function getTypeData(type){
     try {
         let result = await fetch(`https://api.openbrewerydb.org/breweries?by_type=${type}`);
         let data = await result.json();
-        console.log(data);
+        // console.log(data);
         showTable(data);
     } catch (error) {
         console.log(error);
